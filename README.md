@@ -41,6 +41,4 @@ Viel Spaß beim Spielen!
 
 ---
 
-Bitte beachte, dass dies eine allgemeine README-Vorlage ist und du sie entsprechend anpassen musst, um sie an dein tatsächliches Spiel anzupassen.
-
 Ich hoffe, das hilft! Wenn du weitere Fragen hast, stehe ich gerne unter maik.jeschke0101[at]gmail.com zur Verfügung.
