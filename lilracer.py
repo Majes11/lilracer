@@ -14,9 +14,9 @@ def draw_banner():
 ########## ########### ##########             ###    ### ###     ###  ########  ########## ###    ###      
     """
     
-    author = "by Maik Jeschke"
+    instructions = "Verwende die Pfeiltasten links und rechts, um das Auto zu steuern. Leer um zu pausieren."
     print(banner)
-    print(author)
+    print(instructions)
     print()
 
 def draw_track(car_position, car_row, obstacles, score):
