@@ -13,6 +13,7 @@ def draw_banner():
  #+#            #+#     #+#                    #+#    #+# #+#     #+# #+#    #+# #+#        #+#    #+#     
 ########## ########### ##########             ###    ### ###     ###  ########  ########## ###    ###      
     """
+    author = "by Maik Jeschke"
     print(banner)
     print(author)
     print()
