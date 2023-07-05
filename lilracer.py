@@ -13,6 +13,7 @@ def draw_banner():
  #+#            #+#     #+#                    #+#    #+# #+#     #+# #+#    #+# #+#        #+#    #+#     
 ########## ########### ##########             ###    ### ###     ###  ########  ########## ###    ###      
     """
+    
     author = "by Maik Jeschke"
     print(banner)
     print(author)
@@ -34,7 +35,7 @@ def draw_track(car_position, car_row, obstacles, score):
     # Mittlere Spur mit Auto und Hindernissen zeichnen
     for i in range(track_height):
         if i == car_row:
-            car_row_str = track_border + track_blank * (car_position - 1) + '🚗' + track_blank * (track_width - car_position - 2) + track_border
+            car_row_str = track_border + track_blank * (car_position - 2) + '🚗' + track_blank * (track_width - car_position - 1) + track_border
             print(car_row_str)
         elif i in obstacles:
             obstacle_row = track_border + track_blank * (obstacles[i] - 1) + track_obstacle + track_blank * (track_width - obstacles[i] - 2) + track_border
@@ -106,8 +107,8 @@ def main():
                         time.sleep(0.1)
                     break
 
-                # Kollision mit Leitplanke überprüfen
-                if car_row == 0 or car_row == 9 or car_position == 2 or car_position == 29:
+                # Kollision mit Leitplanken überprüfen
+                if car_position == 2 or car_position == 29:
                     print("Kollision mit der Leitplanke! Du hast", score, "Punkte erreicht.")
                     print("Drücke Enter, um es erneut zu versuchen.")
                     while True:
